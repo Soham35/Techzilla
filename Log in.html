@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UM-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Log.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Log in Form</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="Index.html"><img src="eduford_img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                     <li><a href="Index.html">Home</a></li>
+                     <li><a href="About.html.html">About</a></li>
+                     <li><a href="Course.html">Course</a></li>
+                     <li><a href="Blog.html">Blog</a></li>
+                     <li><a href="Contact.html">Contact</a></li>
+                     <li><a href="Registration.html">Sign up</a></li>
+                     <li><a href="Log in.html">Log In</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+        <div class="from-card">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="card-text">
+                    <input type="gmail" required>
+                    <lebel>Gmail</lebel>
+                    <span></span>
+                </div>
+                <div class="card-text">
+                    <input type="password" required>
+                    <lebel>Password</lebel>
+                    <span></span>
+                </div>
+                <div class="card-pass">Forget password</div>
+                <input type="submit" value="Login">
+                <div class="card-signup-link">
+                    Not a member ? <a href="Registration.html">Signup</a>
+                </div>
+
+            </form>
+        </div>
+         <!------Footer----->
+         <section class="footer">
+            
+            <div class="icons">
+                <i class="fa fa-facebook"></i> 
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-youtube"></i>
+            </div>
+           
+    
+        </section>
+
+
+
+
+
+
+
+        <script>
+            var navLinks = document.getElementById("navLinks"); 
+            function showMenu(){
+                navLinks.style.right ="0";
+            }  
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }  
+        </script>
+          
+   
+       
+
+    
+    </body>
+</html>
